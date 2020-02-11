@@ -20,7 +20,10 @@ namespace ContosoUniversity.Controllers
         {
             return View(db.Students.ToList());
         }
-
+        public ActionResult Display()
+        {
+            return View(db.Students.ToList());
+        }
         // GET: Student/Details/5
         public ActionResult Details(int? id)
         {
